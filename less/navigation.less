@@ -1,1 +1,30 @@
 // Navigation code here
+
+.nav{
+    z-index:1;
+    position:fixed;
+    width:800px;
+    left:50%;
+    margin-left:-400px;
+    padding-top:20px;
+    text-align:center;
+    background-color:white;
+
+    .links{
+        margin:20px auto;
+        width:50%;
+        display:inline-flex;
+        justify-content:space-around;
+
+        @media(max-width:@phone) {
+            width:400px;
+        }
+        
+        a{
+            font-weight:bold;
+            font-size:1.6rem;
+            color:@header-font-color;
+            text-decoration:none;
+         }
+    }
+}
