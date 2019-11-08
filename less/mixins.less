@@ -5,7 +5,6 @@
 }
 
 .phone{
-    
     @media(max-width:@phone) {
         width:@phone;
         max-width:100%;
@@ -18,10 +17,10 @@
     }
 }
 
-.transition(@time) {
-    -webkit-transition: all @time ease-in-out;
-    -moz-transition: all @time ease-in-out;
-    -ms-transition: all @time ease-in-out;
-    -o-transition: all @time ease-in-out;
-    transition: all @time ease-in-out;
+.transition(@property; @time; @effect;){
+    -webkit-transition: @property @time @effect;
+    -moz-transition: @property @time @effect;
+    -ms-transition: @property @time @effect;
+    -o-transition: @property @time @effect;
+    transition: @property @time @effect;
 }
