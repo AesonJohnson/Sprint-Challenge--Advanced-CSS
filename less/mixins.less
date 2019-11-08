@@ -1,1 +1,19 @@
 // Mixins Here
+
+.border-radius{
+    border-radius:5px;
+}
+
+.phone{
+    
+    @media(max-width:@phone) {
+        width:@phone;
+        max-width:100%;
+    }
+}
+
+.invis{
+    @media(max-width:@phone) {
+        display:none;
+    }
+}
